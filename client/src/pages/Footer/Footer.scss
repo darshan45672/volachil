@@ -1,0 +1,98 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    color: #999;
+    margin: 50px 0;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 0 auto; /* Changed to shorthand for better readability */
+
+        .top {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 50px 0;
+
+            .item {
+                width: 180px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                h1 {
+                    font-size: 16px;
+                    color: #404145;
+                    margin: 0; /* Ensure no unwanted spacing */
+                }
+
+                span {
+                    font-weight: 400;
+                    color: #74767e;
+                }
+            }
+
+            /* Responsive design for smaller screens */
+            @media screen and (max-width: 900px) {
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                gap: 20px; /* Adjust gap for smaller screens */
+            }
+        }
+
+        hr {
+            width: 100%;
+            border: 0.5px solid #e4e3e3; /* Simplified color definition */
+            margin: 20px 0; /* Added spacing for better layout */
+        }
+
+        .bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+            
+            .left {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                
+                span {
+                    font-size: 13px;
+                    line-height: 1.5; /* Improved readability */
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 30px;
+
+                .social {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+
+                .link {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+
+            /* Responsive design for smaller screens */
+            @media screen and (max-width: 900px) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+        }
+    }
+}
